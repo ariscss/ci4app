@@ -1,0 +1,57 @@
+CRITICAL - 2020-07-06 00:30:07 --> Argument 2 passed to CodeIgniter\Validation\Rules::is_unique() must be of the type string, null given, called in G:\ci4app\vendor\codeigniter4\framework\system\Validation\Validation.php on line 294
+#0 G:\ci4app\vendor\codeigniter4\framework\system\Validation\Validation.php(294): CodeIgniter\Validation\Rules->is_unique('Naruto', NULL)
+#1 G:\ci4app\vendor\codeigniter4\framework\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('judul', 'judul', 'Naruto', Array, Array)
+#2 G:\ci4app\vendor\codeigniter4\framework\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#3 G:\ci4app\app\Controllers\Comics.php(55): CodeIgniter\Controller->validate(Array)
+#4 G:\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Comics->save()
+#5 G:\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comics))
+#6 G:\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 G:\ci4app\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 G:\ci4app\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('G:\\ci4app\\publi...')
+#9 {main}
+CRITICAL - 2020-07-06 00:31:12 --> Argument 2 passed to CodeIgniter\Validation\Rules::is_unique() must be of the type string, null given, called in G:\ci4app\vendor\codeigniter4\framework\system\Validation\Validation.php on line 294
+#0 G:\ci4app\vendor\codeigniter4\framework\system\Validation\Validation.php(294): CodeIgniter\Validation\Rules->is_unique('naruto', NULL)
+#1 G:\ci4app\vendor\codeigniter4\framework\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('judul', 'judul', 'naruto', Array, Array)
+#2 G:\ci4app\vendor\codeigniter4\framework\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#3 G:\ci4app\app\Controllers\Comics.php(55): CodeIgniter\Controller->validate(Array)
+#4 G:\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Comics->save()
+#5 G:\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comics))
+#6 G:\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 G:\ci4app\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 G:\ci4app\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('G:\\ci4app\\publi...')
+#9 {main}
+CRITICAL - 2020-07-06 01:09:15 --> Call to undefined method CodeIgniter\Validation\Validation::listError()
+#0 G:\ci4app\vendor\codeigniter4\framework\system\View\View.php(246): include()
+#1 G:\ci4app\vendor\codeigniter4\framework\system\Common.php(1087): CodeIgniter\View\View->render('comics/create', Array, true)
+#2 G:\ci4app\app\Controllers\Comics.php(50): view('comics/create', Array)
+#3 G:\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Comics->create()
+#4 G:\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comics))
+#5 G:\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 G:\ci4app\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 G:\ci4app\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('G:\\ci4app\\publi...')
+#8 {main}
+CRITICAL - 2020-07-06 08:50:44 --> No connection could be made because the target machine actively refused it.
+
+#0 C:\laragon\www\ci4app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci4app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci4app\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1845): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\ci4app\vendor\codeigniter4\framework\system\Model.php(445): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\ci4app\app\Models\ComicsModel.php(16): CodeIgniter\Model->findAll()
+#5 C:\laragon\www\ci4app\app\Controllers\Comics.php(21): App\Models\ComicsModel->getComic()
+#6 C:\laragon\www\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Comics->index()
+#7 C:\laragon\www\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comics))
+#8 C:\laragon\www\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\ci4app\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\ci4app\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2020-07-06 08:50:44 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\laragon\www\ci4app\app\Views\errors\html\error_exception.php:100
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\laragon\\www\\...', 100, Array)
+#1 C:\laragon\www\ci4app\app\Views\errors\html\error_exception.php(100): print_r(Object(App\Controllers\Comics), true)
+#2 C:\laragon\www\ci4app\vendor\codeigniter4\framework\system\Debug\Exceptions.php(299): include('C:\\laragon\\www\\...')
+#3 C:\laragon\www\ci4app\vendor\codeigniter4\framework\system\Debug\Exceptions.php(172): CodeIgniter\Debug\Exceptions->render(Object(mysqli_sql_exception), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
